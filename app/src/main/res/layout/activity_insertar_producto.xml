@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="aget.aget.workstation.aplicacionbdparte2.Insertar"
+    android:background="@mipmap/back">
+
+    <!-- Codigo-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa los Datos:" />
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/precio"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/cantidad"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/categoria"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/idcategoriasel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categoria" />
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Spinner
+        android:id="@+id/proveedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/proveedor"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/idproveedorsel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/proveedor" />
+
+    <android.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar" />
+
+</LinearLayout>
